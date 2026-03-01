@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Strauss Management Limited</title>
-  <meta charset="UTF-8">
-</head>
-<body>
-  <h1>Strauss Management Limited</h1>
-  <p>Welcome to our website.</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strauss Management Limited</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-900 antialiased">
+    <!-- Header -->
+    <header class="bg-white border-b">
+      <div class="max-w-5xl mx-auto px-6 py-12 text-center">
+        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight">
+          Strauss Management Limited
+        </h1>
+        <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+          A UK-based film production company producing cinematic stories with global reach.
+        </p>
+      </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+      <h2 class="text-2xl font-semibold mb-8 text-center">Our Projects</h2>
+
+      <div
+        class="bg-white rounded-2xl shadow-sm border hover:shadow-md transition overflow-hidden"
+      >
+        <!-- Preview iframe -->
+        <div class="aspect-video w-full">
+          <iframe
+            src="https://thelegendoflandi.com"
+            class="w-full h-full"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <!-- Card Content -->
+        <div class="p-6">
+          <h3 class="text-xl font-semibold">The Legend of Landi</h3>
+          <p class="mt-3 text-gray-600">
+            One man's dream to build a floating city and its consequences from the future of civilisation.
+          </p>
+
+          <a
+            href="https://thelegendoflandi.com"
+            target="_blank"
+            class="inline-block mt-5 text-sm font-medium text-black underline"
+          >
+            Visit Project Website →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t">
+      <div
+        class="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600"
+      >
+        <p>
+          © <span id="year"></span> Strauss Management Limited. All rights
+          reserved.
+        </p>
+
+        <a
+          href="mailto:info@straussmanagementlimited.com"
+          class="mt-4 md:mt-0 hover:text-black transition"
+        >
+          info@straussmanagementlimited.com
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
 </html>
