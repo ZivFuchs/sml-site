@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,37 +10,100 @@
   <body class="bg-gray-50 text-gray-900 antialiased">
     <!-- Header -->
     <header class="bg-white border-b">
-      <div class="max-w-5xl mx-auto px-6 py-12 text-center">
+    <div class="max-w-5xl mx-auto px-6 py-12 text-center">
         <h1 class="text-4xl md:text-5xl font-semibold tracking-tight">
-          Strauss Management Limited
+        Strauss Management Limited
         </h1>
         <p class="mt-6 text-lg text-gray-600 mx-auto">
-          A UK-based film production company producing cinematic stories with global reach.
+        A UK-based film production company producing cinematic stories with
+        global reach.
         </p>
-      </div>
+        <div
+        class="mt-6 text-sm text-gray-500 flex flex-col items-center space-y-2"
+        >
+        <a
+            href="mailto:info@straussmanagementlimited.com"
+            class="flex items-center gap-2 hover:text-gray-900 transition"
+        >
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4"
+            >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+            />
+            </svg>
+            info@straussmanagementlimited.com
+        </a>
+        <p>
+            71-75 Shelton Street Covent Garden, London, WC2H 9JQ, United Kingdom
+        </p>
+        </div>
+    </div>
     </header>
 
+    <!-- Services Section -->
+    <section class="max-w-5xl mx-auto px-6 py-16 border-b">
+      <h2 class="text-2xl font-semibold mb-8 text-center">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border">
+          <h3 class="text-xl font-semibold mb-2">Pre-Production</h3>
+          <p class="text-gray-600 text-sm">
+            Creative development, scriptwriting, storyboard creation, and
+            logistics planning.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border">
+          <h3 class="text-xl font-semibold mb-2">Production</h3>
+          <p class="text-gray-600 text-sm">
+            Principal photography, directing, cinematography, lighting, and
+            on-set sound recording.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border">
+          <h3 class="text-xl font-semibold mb-2">Post-Production</h3>
+          <p class="text-gray-600 text-sm">
+            Video editing, color grading, sound design, visual effects, and
+            final mastering.
+          </p>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-gray-600 bg-gray-100 p-6 rounded-xl">
+        <p class="font-medium text-gray-900">Pricing</p>
+        <p class="mt-2 text-sm">
+          Prices vary significantly depending on the scope, scale, and
+          requirements of each project. Please fill out the inquiry form below
+          to receive a custom quote.
+        </p>
+      </div>
+    </section>
+
     <!-- Projects Section -->
-    <section class="max-w-5xl mx-auto px-6 py-16">
-      <h2 class="text-2xl font-semibold mb-8 text-center">Our Projects</h2>
+    <section class="max-w-5xl mx-auto px-6 py-16 border-b">
+      <h2 class="text-2xl font-semibold mb-8 text-center">Featured Project</h2>
 
       <div
         class="bg-white rounded-2xl shadow-sm border hover:shadow-md transition overflow-hidden"
       >
-        <!-- Preview iframe -->
-        <div class="aspect-video w-full">
+        <div class="aspect-video w-full bg-gray-200">
           <iframe
             src="https://thelegendoflandi.com"
-            class="w-full h-full"
+            class="w-full h-full border-none"
             loading="lazy"
           ></iframe>
         </div>
 
-        <!-- Card Content -->
         <div class="p-6">
           <h3 class="text-xl font-semibold">The Legend of Landi</h3>
           <p class="mt-3 text-gray-600">
-            One man's dream to build a floating city and its implications for the future of civilisation.
+            One man's dream to build a floating city and its implications for
+            the future of civilisation.
           </p>
 
           <a
@@ -54,28 +117,139 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t">
-      <div
-        class="max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600"
+    <!-- Contact & Request Form -->
+    <section class="max-w-3xl mx-auto px-6 py-16 border-b">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Work With Us</h2>
+      <p class="text-center text-gray-600 mb-8">
+        Request a service or propose a collaboration. We will get back to you
+        shortly.
+      </p>
+
+      <form
+        class="bg-white p-8 rounded-2xl shadow-sm border space-y-4"
+        onsubmit="event.preventDefault(); alert('Thank you for your inquiry. We will be in touch shortly.');"
       >
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Name / Company</label
+          >
+          <input
+            type="text"
+            required
+            class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Email Address</label
+          >
+          <input
+            type="email"
+            required
+            class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Project Description</label
+          >
+          <textarea
+            required
+            rows="5"
+            class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
+            placeholder="Tell us about your project, budget, and timeline..."
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-black text-white font-medium py-3 rounded-lg hover:bg-gray-800 transition"
+        >
+          Request Quote
+        </button>
+      </form>
+    </section>
+
+    <!-- Policies Section -->
+    <section class="max-w-5xl mx-auto px-6 py-16 text-sm text-gray-600">
+      <h2 class="text-xl font-semibold mb-6 text-gray-900">Policies</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-semibold text-gray-900 mb-2">Terms & Conditions</h3>
+          <p>
+            All video production services require a signed contract detailing the
+            specific scope of work prior to commencement. Strauss Management
+            Limited retains copyright of all raw materials and final deliverables
+            until payment has been received in full. Clients are responsible for
+            securing necessary permits for private locations unless otherwise
+            agreed in writing.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-900 mb-2">Delivery Policy</h3>
+          <p>
+            Project timelines will be established during the pre-production
+            phase. Drafts and final deliverables are provided digitally via
+            secure download links. Physical media delivery is available upon
+            request and may incur additional fees. The standard revision process
+            includes up to two rounds of edits; further revisions will be billed
+            at our standard hourly rate.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-900 mb-2">
+            Refund & Cancellation Policy
+          </h3>
+          <p>
+            A non-refundable deposit (typically 30-50% depending on project
+            scale) is required to secure production dates. If a project is
+            cancelled by the client more than 7 days prior to the shoot, no
+            additional fees will be charged beyond the deposit. Cancellations or
+            postponements within 7 days of production will incur a fee equal to
+            the expenses already committed. Completed services and deliverables
+            are non-refundable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t py-8 text-sm text-gray-600">
+    <div
+        class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4"
+    >
         <p>
-          © <span id="year"></span> Strauss Management Limited. All rights
-          reserved.
+        &copy; <span id="year"></span> Strauss Management Limited. All rights
+        reserved.
         </p>
 
+        <div class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
         <a
-          href="mailto:info@straussmanagementlimited.com"
-          class="mt-4 md:mt-0 hover:text-black transition"
+            href="mailto:info@straussmanagementlimited.com"
+            class="flex items-center gap-2 hover:text-gray-900 transition"
         >
-          info@straussmanagementlimited.com
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4"
+            >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+            />
+            </svg>
+            info@straussmanagementlimited.com
         </a>
-      </div>
+        <a href="#" class="hover:text-gray-900 transition">
+            Back to Top &uarr;
+        </a>
+        </div>
+    </div>
     </footer>
 
     <script>
-      document.getElementById("year").textContent =
-        new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
     </script>
-  </body>
-</html>
