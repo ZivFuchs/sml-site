@@ -119,54 +119,81 @@
 
     <!-- Contact & Request Form -->
     <section class="max-w-3xl mx-auto px-6 py-16 border-b">
-      <h2 class="text-2xl font-semibold mb-4 text-center">Work With Us</h2>
-      <p class="text-center text-gray-600 mb-8">
+    <h2 class="text-2xl font-semibold mb-4 text-center">Work With Us</h2>
+    <p class="text-center text-gray-600 mb-8">
         Request a service or propose a collaboration. We will get back to you
         shortly.
-      </p>
+    </p>
 
-      <form
+    <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
         class="bg-white p-8 rounded-2xl shadow-sm border space-y-4"
-        onsubmit="event.preventDefault(); alert('Thank you for your inquiry. We will be in touch shortly.');"
-      >
+    >
+        <!-- Your Web3Forms Access Key -->
+        <input
+        type="hidden"
+        name="access_key"
+        value="6cc1d385-3b21-4c9d-b9bb-ecfe56edd76b"
+        />
+
+        <!-- Optional: Add a subject line for your email -->
+        <input
+        type="hidden"
+        name="subject"
+        value="New Website Inquiry from Strauss Management Limited"
+        />
+
         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1"
-            >Name / Company</label
-          >
-          <input
+        <label class="block text-sm font-medium text-gray-700 mb-1">
+            Name / Company
+        </label>
+        <input
             type="text"
+            name="name"
             required
             class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
-          />
+        />
         </div>
         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1"
-            >Email Address</label
-          >
-          <input
+        <label class="block text-sm font-medium text-gray-700 mb-1">
+            Email Address
+        </label>
+        <input
             type="email"
+            name="email"
             required
             class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
-          />
+        />
         </div>
         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1"
-            >Project Description</label
-          >
-          <textarea
+        <label class="block text-sm font-medium text-gray-700 mb-1">
+            Project Description
+        </label>
+        <textarea
+            name="message"
             required
             rows="5"
             class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black focus:outline-none"
             placeholder="Tell us about your project, budget, and timeline..."
-          ></textarea>
+        ></textarea>
         </div>
+
+        <!-- Honeypot Spam Protection -->
+        <input
+        type="checkbox"
+        name="botcheck"
+        class="hidden"
+        style="display: none;"
+        />
+
         <button
-          type="submit"
-          class="w-full bg-black text-white font-medium py-3 rounded-lg hover:bg-gray-800 transition"
+        type="submit"
+        class="w-full bg-black text-white font-medium py-3 rounded-lg hover:bg-gray-800 transition"
         >
-          Request Quote
+        Request Quote
         </button>
-      </form>
+        </form>
     </section>
 
     <!-- Policies Section -->
